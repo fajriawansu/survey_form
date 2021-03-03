@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Hoghwarts Open Volunteer for Defeating Jakarta's Foes</h1>
+    <p id="description">Muggles are very annoying, but we have to keep helping them from Dementor which run from Azkaban!<br> <strong>Foes are coming!</strong> Face them by fill this form with your own risk!</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name"
+               type="text"
+               name="name"
+               placeholder="enter your name"
+               class="form-control"
+               required/>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email"
+               type="email"
+               name="email"
+               class="form-control"
+               placeholder="enter your email"
+               required/>
+      </div>
+      <div class="form-group">
+        <p>What is Your Hoghwart's Houses?</p>
+        <label>
+          <input name="houses"
+                 type="radio"
+                 value="gryffindor"
+                 class="input-radio"
+                 checked
+                 />Gryffindor
+        </label><br>
+        <label>
+          <input name="houses"
+                 type="radio"
+                 value="slytherin"
+                 class="input-radio"
+                 />Slytherin
+        </label><br>
+        <label>
+          <input name="houses"
+                 type="radio"
+                 value="ravenclaw"
+                 class="input-radio"
+                 />Ravenclaw
+        </label><br>
+        <label>
+          <input name="houses"
+                 type="radio"
+                 value="hufflepuff"
+                 class="input-radio"
+                 />Hufflepuff
+        </label>
+      </div>
+      <div class="form-group">
+        <p>For Team Balance, What Magis Class are You Good at?</p>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Transfiguration"
+                 class="input-checkbox"
+                 />Transfiguration
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Charms"
+                 class="input-checkbox"
+                 />Charms
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Potions"
+                 class="input-checkbox"
+                 />Potions
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="History"
+                 class="input-checkbox"
+                 />History of Magic
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Darkdefence"
+                 class="input-checkbox"
+                 />Defence Against The Dark Arts
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Astronomy"
+                 class="input-checkbox"
+                 />Astronomy
+        </label><br>
+        <label>
+          <input name="magic-class"
+                 type="checkbox"
+                 value="Herbology"
+                 class="input-checkbox"
+                 />Herbology
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="explanation-text">After you join the team, each person will get 3 spare magic wands, please specify yours!</p>
+        <label id="number-label" for="magicwand">Length
+          <input id="number"
+                 name="magicwand"
+                 type="number"
+                 placeholder="between 7-15 inch"
+                 class="form-control"
+                 min="7"
+                 max="15"
+                 required
+                 />
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="dropdown" for="wood">
+          Wood
+          <select class="form-control" name="wood" id="wood" required>
+            <option disabled selected value>Select an Option</option>
+            <option value="acacia"> Acacia</option>
+            <option value="aspen"> Aspen</option>
+            <option value="elder"> Elder</option>
+            <option value="elm"> Elm</option>
+            <option value="holy"> Acacia</option>
+            <option value="maple"> Maple</option>
+            <option value="oak"> Oak</option>
+            <option value="pine"> Pine</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="core">
+          Core
+          <select id="core" name="core" class="form-control" required>
+            <option disabled selected value>Select an Option</option>
+            <option value="dragon"> Dragon Hearthstring</option>
+            <option value="phoenix"> Phoenix Feather</option>
+            <option value="unicorn"> Unicorn Tail Hair</option>
+            <option value="serpent"> Horned Serpent Horn</option>
+            <option value="basilisk"> Basilisk Horn</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="explanation-text">Please write your address bellow, our owl postal service will send your spare wand in 3 days!</p>
+        <textarea id="address"
+                  name="address"
+                  class="input-textarea"
+                  placeholder="Write your completed address"
+                  required></textarea>
+      </div>
+      <div class="form-group">
+        <label>
+          <button id="submit"
+                  type="submit"
+                  class="input-submit"
+                  >Submit</button>
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
